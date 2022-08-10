@@ -1,0 +1,34 @@
+package com.automation.utility;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserFactory {
+
+	public static WebDriver startApplication(String browserName, String URL, WebDriver ldriver) {
+
+		if (browserName.equals("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			ldriver = new ChromeDriver();
+
+		} else if (browserName.equals("Firefox")) {
+
+		} else if (browserName.equals("IE")) {
+
+		}
+		ldriver.get(URL);
+		ldriver.manage().window().maximize();
+		ldriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+		return ldriver;
+
+	}
+
+	public static void quitApplication(WebDriver driver) {
+
+		driver.quit();
+	}
+
+}

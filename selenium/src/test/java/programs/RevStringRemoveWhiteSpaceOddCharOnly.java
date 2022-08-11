@@ -1,8 +1,5 @@
 package programs;
 
-import java.util.Collections;
-import java.util.Scanner;
-
 public class RevStringRemoveWhiteSpaceOddCharOnly {
 		
 	
@@ -28,8 +25,6 @@ public class RevStringRemoveWhiteSpaceOddCharOnly {
 		}
 		System.out.println("The only odd character String of: "+temp+" : is:  "+res);
 		
-		
-
 	}
 
 }

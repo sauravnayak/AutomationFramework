@@ -1,5 +1,8 @@
 package programs;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Fibonacci {
 
 	public static void main(String[] args) {
@@ -7,9 +10,14 @@ public class Fibonacci {
 		
 		//Printing Fibonnacci series 
 		// 0 1 1 2 3 5 8  13
-		int a=9;
+		//int a=9;
 		// 0 1  2 3 5 8 13 
 		//0+0  0+1   1+1  1+2 2+3 
+		ArrayList<Integer> arr= new ArrayList<Integer>(); 
+		System.out.println("Enter No of Fibonacci series: ");
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		//int n=
 		
 			int prev=0;
 			int next = 1;

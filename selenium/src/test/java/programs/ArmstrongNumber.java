@@ -13,6 +13,7 @@ public class ArmstrongNumber {
 			System.out.println("Factorial of "+a+" is "+armstrong(a));
 			
 			sc.close();
+			//comemnt
 
 		}
 	public static boolean armstrong(int n) {

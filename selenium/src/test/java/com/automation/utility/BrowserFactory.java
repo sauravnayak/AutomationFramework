@@ -10,7 +10,7 @@ public class BrowserFactory {
 	public static WebDriver startApplication(String browserName, String URL, WebDriver ldriver) {
 
 		if (browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/Chrome/chromedriver.exe");
 			ldriver = new ChromeDriver();
 
 		} else if (browserName.equals("Firefox")) {

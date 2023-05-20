@@ -39,6 +39,18 @@ public class HomePage {
 	@FindBy(linkText = "Basic Auth")
 	WebElement linkBasicAuth;
 	
+	@FindBy(linkText = "Checkboxes")
+	WebElement linkCheckboxes;
+	
+	@FindBy(partialLinkText = "Drag")
+	WebElement linkDragandDrop;
+	
+	
+	@FindBy(partialLinkText = "Context")
+	WebElement linkContextMenu;
+	
+	@FindBy(linkText = "//*[contains(text(),'Add Element')]")
+	WebElement buttonAddElement;
 	
 	
 	
@@ -57,12 +69,37 @@ public class HomePage {
 		linkABTEST.click();
 		
 	}
-	public void clickAddElement()
+	
+public void clickAddRemove()
 	
 	{
 		linkAddRemove.click();
+		
+	}
+
+	public void clickAddElement()
+	
+	{
+		buttonAddElement.click();
 	}
 	
+	public void clickCheckboxes()
+	
+	{
+		linkCheckboxes.click();
+	}
+	
+	public void clickContextmenu()
+	
+	{
+	linkContextMenu.click();
+	}
+	
+	public void clickDragDrop()
+	
+	{
+	linkDragandDrop.click();
+	}
 	
 	
 	

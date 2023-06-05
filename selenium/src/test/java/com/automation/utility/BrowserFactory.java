@@ -5,13 +5,16 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserFactory {
 
 	public static WebDriver startApplication(String browserName, String URL, WebDriver ldriver) {
-
+		ldriver=WebDriverManager.chromedriver().create();
 		if (browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./Drivers/Chrome/chromedriver.exe");
-			ldriver = new ChromeDriver();
+			
+			//System.setProperty("webdriver.chrome.driver", "./Drivers/Chrome/chromedriver.exe");
+			//ldriver = new ChromeDriver();
 
 		} else if (browserName.equals("Firefox")) {
 
